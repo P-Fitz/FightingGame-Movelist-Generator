@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="js/movegen.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/movegen.css">
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Move Generator</title>
+</head>
+<body>
+<header>
+    <h1><FONT Color = #FF0000><u>Fighting Game Move Generator</u></FONT></h1>
+    <p>
+        This app is designed for players to document moves from fighting games games they've played or ones they've created.<br>
+        Enter details of your move and press OK to generate, Cancel to revert.<br>
+        <br>
+        For the "Input" field look at your number keys and type the number key representing the direction you wish to move the joystick or directional pad, followed by more keys if you desire to create a series of directions creating a motion.<br>
+        P and K are used depending on which action buttons you want to use during the move input (punch or kick or both).
+        <br>
+        <Font Color = FF000>The valid inputs are "1,2,3,4,5,6,7,8,9, P and K"</Font>
+    </p>
+    <img id ="joystick" img src="Images/joystick.png" alt="Joystick directions" height="170" width="295">
+
+    <img id = "hadouken" img src="Images/hadouken.png" alt="Example" height="185" width="200">
+    <p id="example">
+        <FONT COLOR=0000FF>The move "Hadouken" is a down forward motion (236 on the numpad) followed by a punch button.</FONT>
+    </p>
+</header>
+
+<table class="mytable">
+    <tr>
+        <td>Name:</td><td><input type="text" size="40" id="name" /></td>
+    </tr>
+    <tr>
+        <td>Damage:</td><td><input type="text" size="40" id="damage" /></td>
+    </tr>
+    <tr>
+        <td>Input:</td><td><input type="text" size="40" id="input" /></td>
+    </tr>
+    <tr>
+        <td>Description:</td><td><textarea rows="5" cols="50" maxlength="1000" id="description"></textarea></td>
+    </tr>
+</table>
+<button id="confirm">Confirm</button>
+<button id="clear">Clear</button>
+<button id="tutorial">Tutorial</button>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="delete">Delete Selection</button>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="undo">Undo latest move</button>
+<hr/>
+<div id="table">
+</div>
+</body>
+</html>

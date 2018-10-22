@@ -1,0 +1,16 @@
+body {
+    background-image: url("../images/background.png");
+    background-color: #ffffff;
+}
+
+
+.mytable {
+    background-color: #828b5a;
+}
+
+  button:active {
+      background-color: #13ff32;
+  }
+#joystick { visibility: hidden; }
+#hadouken { visibility: hidden; }
+#example { visibility: hidden; }
